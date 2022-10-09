@@ -1,0 +1,9 @@
+.adress .map__search {
+    display: inline-block;
+}
+
+@media screen and (max-width:768px) {
+    .adress .map__search { 
+        display: none;    
+    }
+}

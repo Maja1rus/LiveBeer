@@ -1,0 +1,25 @@
+ymaps {
+    font-family: var(--font-motserrat);
+}
+
+.ymap {
+    display: grid;
+    gap: 10px;
+}
+
+.ymap__title {
+    font-weight: var(--font-bold);
+}
+
+.ymap__link {
+    font-size: 14px;
+    text-decoration: underline;
+    transition: all 0.2s ease;
+    &:hover {
+        color: var(--color-blue);
+    }
+}
+
+.ymap__phone {
+    font-size: 16px;
+}

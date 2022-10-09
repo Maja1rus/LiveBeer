@@ -1,0 +1,127 @@
+.map {
+    margin-bottom: 80px;
+}
+
+.about + .map .nav-page {
+    display: none;
+}
+
+.map__search {
+    display: none;
+    padding-bottom: 37px;
+
+
+    &:hover {
+        svg {
+            
+        }
+    }
+}
+
+.map__title {
+    padding-bottom: 30px;
+}
+
+.map__box {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+
+.map__btn {
+    padding: 15px 0;
+    font-weight: var(--font-medium);
+    font-size: 1rem;
+
+    &--active {
+        background-color: var(--color-dark-gray);
+        color: var(--color-white);
+    }
+}
+
+.map__wrap {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.map__location {
+    background-image: url('../img/map.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 550px;
+}
+
+.map-tab {
+    padding-top: 20px;
+}
+
+.map-tab__title {
+    display: inline-block;
+    padding-bottom: 18px;
+    font-family: var(--font-roadradio);
+    font-size: var(--size-subtitle-small);
+}
+
+.map-tab__wrap {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.map-tab__btn {
+    width: 144px;
+    background-color: var(--color-gray);
+    color: var(-color-black-real);
+    border-radius: 20px;
+
+    &:hover {
+        color: var(--color-white);
+        background-color: var(--color-dark-gray);
+    }
+
+    &--active {
+        background-color: var(--color-yellow);
+        color: var(--color-black-real);
+
+        &:hover {
+            background-color: var(--color-yellow);
+            color: var(--color-black);
+            opacity: 0.8;
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 769px) {
+    .map {
+        margin-bottom: 50px;
+    }
+
+    .map__wrap {
+        grid-template-columns: 1fr;
+        box-shadow: none;
+    }
+
+    .map__box {
+        display: grid;
+    }
+
+    .map__location,
+    .map__tabs {
+        display: none;
+    }
+
+    .map__item {
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+}

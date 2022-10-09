@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"LiveBeer"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        <section class="error container">
+            @@include('html/nav-page.html', {
+            "nav-page":"404"
+            })
+            <h1 class="error__title title">404</h1>
+            <div class="error__item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#F8353E" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+                    <path d="M21.0004 20.9999L16.6504 16.6499" stroke="#F8353E" stroke-width="2" stroke-linecap="square"
+                        stroke-linejoin="round" />
+                </svg>
+                <p>Страница не найдена</p>
+            </div>
+            <div class="error__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <a href="index.html" class="btn error__btn" title="title">на главную</a>
+
+        </section>
+
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/age-verification.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.discount-card {
+    margin-bottom: 80px;
+}
+
+.discount-card__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.discount-card__item {
+    padding: 36px 42px 60px 36px;
+    border-radius: 5px;
+}
+
+.discount-card__item--yellow {
+    background-color: var(--color-yellow);
+    color: var(--color-black-real);
+}
+
+.discount-card__item--black {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+.discount-card__type {
+    font-size: var(--size-normal-big);
+}
+
+.discount-card__title {
+    font-family: var(--font-roadradio);
+    font-weight: var(--font-black);
+    font-size: var(--size-biggest);
+    margin-bottom: 30px;
+    // white-space: nowrap;
+}
+
+.discount-card__options {
+    display: grid;
+    row-gap: 10px;
+    font-size: var(--size-normal);
+}
+
+.discount-card__option {
+    list-style-type: '—  ';
+    margin-left: 30px;
+}
+
+.discount-card__bold {
+    font-weight: var(--font-extra-bold);
+}
+
+.discount-card__footnote {
+    display: inline-block;
+    font-size: 14px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+
+
+        .discount-card__item { 
+            padding: 26px 32px 64px 26px
+        }
+}
+
+@media screen and (max-width: 740px) {
+    .discount-card__wrap {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 20px;
+    }
+
+    .discount-card {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .discount-card__item {
+        padding: 20px 10px 30px 10px;
+    }
+}

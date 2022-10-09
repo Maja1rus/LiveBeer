@@ -1,0 +1,59 @@
+:root {
+    //Fonts
+    --font-motserrat: 'Montserrat', sans-serif;
+    --font-roadradio: 'RoadRadio', sans-serif;
+
+    // Color
+    --color-yellow: #FFE100; //#FFED00;
+    --color-black: #767676; //#000000
+    --color-white: #F5F5F5; //#ffffff;
+    --color-black-real: #272727; //#000000;
+    --color-dark-gray: #686868; //#828282;
+    --color-gray: #C3C3C3; //#BDBDBD;
+    --color-red: #F8353E;
+    --color-blue: #1761D0;
+
+
+    // Font weight
+    --font-regular: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    --font-extra-bold: 800;
+    --font-black: 900;
+
+    //Font size
+
+    --size-biggest: 2.75rem; // 44px
+    --size-big: 2.5rem; // 40px
+    --size-subtitle: 2.125rem; //34px
+    --size-subtitle-medium: 1.875rem; //30px
+    --size-subtitle-small: 1.625rem; //26px
+    --size-normal-big: 1.5rem; //24px
+    --size-normal: 1.25rem; // 20px
+    --size-normal-small: 1.125rem; // 18px
+    --size-small: 0.875rem; // 14px
+    --size-minimal: 0.75rem; // 12px
+
+    @media screen and (max-width: 1440px) {
+        --size-biggest: 2.5rem; //40
+        --size-subtitle: 1.875rem; //30px
+        --size-normal: 1.125rem; //18
+    }
+
+    @media screen and (max-width: 1246px) {
+        --size-biggest: 2.125rem; //34
+        --size-subtitle: 1.625rem; //26px
+        --size-normal: 1.125rem; //18
+    }
+
+    @media screen and (max-width: 425px) {
+        --size-biggest: 1.875rem; // 30px
+        --size-biggest: 1.875rem; //30px
+        --size-big: 1.875rem; // 30px
+        --size-subtitle-medium: 1.625rem; //26px
+        --size-normal-big: 1rem; // 16px
+        --size-normal: 1rem; // 16px
+    }
+
+}

@@ -1,0 +1,28 @@
+.main-contact {}
+
+.main-contact__number {
+    display: block;
+    font-size: var(--size-subtitle-small);
+    font-weight: var(--font-bold);
+    padding-bottom: 5px;
+    white-space: nowrap;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--color-yellow);
+    }
+}
+
+.main-contact__text {
+    display: block;
+    padding-bottom: 15px;
+}
+
+@supports selector(:focus-visible) {
+
+    .main-contact__number{
+        &:focus-visible {
+            outline: 1px solid var(--color-dark-gray);
+        }
+    }
+}

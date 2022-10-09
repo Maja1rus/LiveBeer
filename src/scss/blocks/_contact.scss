@@ -1,0 +1,70 @@
+ .contact {
+     display: flex;
+     flex-direction: column;
+     grid-gap: 30px;
+ }
+
+ .contact__wrap {
+     display: flex;
+     flex-direction: column;
+     grid-gap: 6px;
+ }
+
+ .contact__title {
+     font-family: var(--font-roadradio);
+     font-size: var(--size-normal-small);
+ }
+
+ .contact__text {
+     padding-bottom: 10px;
+ }
+
+ .contact__mail {
+     text-decoration: underline;
+
+     transition: all 0.2s ease-in;
+
+     &:hover {
+         color: var(--color-yellow);
+     }
+ }
+
+ .contact__number {
+     font-size: 1.5rem;
+     font-weight: var(--font-medium);
+
+     transition: all 0.2s ease-in;
+
+     &:hover {
+         color: var(--color-yellow);
+     }
+ }
+
+ .contact__messenger {
+     display: flex;
+     grid-gap: 24px;
+ }
+
+ .contact__messenger a {
+     font-size: var(--size-small);
+     text-decoration: underline;
+
+     transition: all 0.2s ease-in;
+
+     &:hover {
+         color: var(--color-yellow);
+     }
+ }  
+
+
+ @supports selector(:focus-visible) {
+
+    .contact__messenger,
+    .contact__mail,
+    .contact__mail,
+    .contact__number {
+        &:focus-visible {
+            outline: 1px solid var(--color-dark-gray);
+        }
+    }
+ }

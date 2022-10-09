@@ -1,0 +1,104 @@
+.store-card {
+    margin-bottom: 60px;
+}
+
+.store-card__title {
+    padding-bottom: 40px;
+}
+
+.store-card__map {
+    margin-bottom: 40px;
+    height: 322px;
+    background-image: url(../img/store-map.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.store-card__wrap {
+    display: flex;
+    gap: 70px;
+}
+
+.store-card__item {
+    .map-list__title {
+        padding-bottom: 22px;
+    }
+
+    .map-list__icon {
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
+    }
+
+    .map-list__address {
+        font-size: var(--size-normal);
+    }
+
+    .map-list__subtitle {
+        padding-left: 0;
+        padding-bottom: 12px;
+    }
+
+    .map-list__status,
+    .map-list__works {
+        font-size: 1rem;
+    }
+}
+
+.store-card__adress {
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
+.store-card__schedule {
+    position: relative;
+    display: inline-block;
+    font-weight: var(--font-medium);
+    color: var(--color-dark-gray);
+    padding-left: 24px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        left: 0;
+        background-image: url('.././img/icon/clock.svg');
+        background-size: initial;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.store-card__text {
+    display: inline-block;
+    font-weight: var(--font-medium);
+    padding-bottom: 21px;
+}
+
+.store-card__number {
+    font-weight: var(--font-bold);
+    font-size: var(--size-subtitle-small);
+}
+
+@media screen and(max-width:768px) {
+    .store-card__wrap {
+         gap: 40px;
+    }
+
+    .store-card { 
+        margin-bottom: 40px;
+    }
+
+    .store-card__map {
+        height: 406px;
+    }
+}
+
+@media screen and(max-width:613px) {
+    .store-card__wrap {
+        flex-direction: column;
+    }
+}

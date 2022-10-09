@@ -1,0 +1,252 @@
+<section class="map container">
+    @@include('nav-page.html', {
+    "nav-page":"Вакансии"
+    })
+    <h1 class="map__title title">адреса магазинов</h1>
+    <div class="map__search">
+        @@include('search.html', {})
+    </div>
+    <div class="map__box">
+        <button class="map__btn map__btn--active" data-map="#map-1">На карте</button>
+        <button class="map__btn" data-map="#map-2">Списком</button>
+    </div>
+    <div class="map__wrap js-map">
+        <div class="map__location map__item map__item--active" id="map-1">
+        </div>
+        <div class="map__tabs map-tab map__item" id="map-2">
+            <div class="map-tab__title">выбрать из списка</div>
+            <div class="map-tab__wrap">
+                <button class="btn map-tab__btn map-tab__btn--active" data-tab="#tab-1">Санкт-Петербург</button>
+                <button class="btn map-tab__btn" data-tab="#tab-2">Ленобласть</button>
+            </div>
+            <div class="map-tab__list map-list">
+                <div class="map-list__size map-list__size--active" id="tab-1">
+                    <div class="map-list__item" 
+                        data-item-id="3" 
+                        data-item-coords="59.952006, 30.575445" 
+                        data-item-adress="Голландская ул., 10, городской посёлок Янино-1"
+                        data-item-phone="+79112801108"
+                        data-item-start="10"                            
+                        data-item-end="12"
+                        data-item-metro="red"
+                        data-item-link="store.html"
+                        >
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            <div class="map-list__address map-list__address-js">111</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 12:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item" 
+                        data-item-id="4" 
+                        data-item-coords="59.929687, 30.472355" 
+                        data-item-adress="Российский просп., 14"
+                        data-item-phone="+79111201681"
+                        data-item-start="18"                            
+                        data-item-end="23"
+                        data-item-metro="purple"
+                        data-item-link="store.html"
+                        >
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Российский просп., 14</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Откроется в 12:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item" 
+                        data-item-id="2" 
+                        data-item-coords="60.054711, 30.425804" 
+                        data-item-adress="ул. Шувалова, 7, Мурино"
+                        data-item-phone="+79111973446"
+                        data-item-start="10"                            
+                        data-item-end="23"
+                        data-item-metro="green"
+                        data-item-link="store.html"
+                        >
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">ул. Шувалова, 7, Мурино</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 23:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item" 
+                        data-item-id="1"
+                        data-item-coords="59.859497, 30.410739" 
+                        data-item-adress="Рыбацкое, Южное шоссе, 49к2"
+                        data-item-phone="+79112801108"
+                        data-item-start="10"                            
+                        data-item-end="23"
+                        data-item-metro="orange"
+                        data-item-link="store.html"
+                        >
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Рыбацкое, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Дыбенко, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Рыбацкое, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Проспект Славы, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Рыбацкое, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-list__size" id="tab-2">
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Рыбацкое, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Открыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Откроется в 14:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Рыбацкое, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                    <div class="map-list__item">
+                        <div class="map-list__title">
+                            <span class="map-list__icon"></span>
+                            </span>
+                            <div class="map-list__address map-list__address-js">Шушары, Южное шоссе, 49к2</div>
+                        </div>
+                        <div class="map-list__subtitle">
+                            <span class="map-list__status">Закрыто</span>
+                            <p class="map-list__dotte map-list__works">Закроется в 22:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

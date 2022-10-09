@@ -1,0 +1,34 @@
+
+// Base
+@import "./base/base.scss";
+@import "./base/fonts";
+@import "./base/variables";
+
+// Blocks
+
+@import "./blocks/header";
+@import "./blocks/main-contact";
+@import "./blocks/contact";
+@import "./blocks/discount-card";
+@import "./blocks/about";
+@import "./blocks/map";
+@import "./blocks/ymap";
+@import "./blocks/map-list";
+@import "./blocks/work";
+@import "./blocks/popup";
+@import "./blocks/job";
+@import "./blocks/question";
+@import "./blocks/error";
+@import "./blocks/adress";
+@import "./blocks/search";
+@import "./blocks/store-map";
+@import "./blocks/slider";
+@import "./blocks/contact-page";
+@import "./blocks/nav-page";
+@import "./blocks/footer";
+@import "./blocks/age";
+@import "./blocks/text";
+
+
+//vendors
+@import "./vendors/swiper";

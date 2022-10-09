@@ -1,0 +1,119 @@
+.footer {
+    padding: 60px 0 0 0;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.footer__wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-bottom: 45px;
+    grid-gap: 20px;
+}
+
+.footer__logo {
+    padding-bottom: 24px;
+}
+
+.footer__logo img {
+    max-width: 233px;
+}
+
+.footer__nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 20px;
+}
+
+.footer-nav {
+    display: grid;
+    row-gap: 24px;
+    font-family: var(--font-roadradio);
+    color: var(--color-gray);
+}
+
+
+.footer-nav__link {
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        color: var(--color-yellow);
+    }
+}
+
+.foooter__copy {
+    border-top: 1px solid var(--color-dark-gray);
+}
+
+.footer__text {
+    padding: 20px 0;
+}
+
+.footer__map {
+    display: none;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 14px;
+}
+
+@media screen and (max-width: 1140px) {
+    .footer__wrap {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .footer__item {
+        &:nth-child(2) {
+            grid-column: 1 / -1;
+            margin-bottom: 40px;
+
+        }
+
+        &:nth-child(1) {
+            grid-column-start: 1;
+            grid-row-start: 2;
+        }
+
+        &:nth-child(3) {
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+    }
+
+    .footer__nav {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 578px) {
+
+    .footer {
+        padding: 0;
+    }
+
+    .footer__wrap {
+        display: none;
+    }
+
+    .foooter__copy {
+        border: none;
+    }
+
+    .footer__text {
+        text-align: center;
+        padding: 14px 30px 14px 40px;
+    }
+
+    .footer__map {
+        display: block;
+    }
+}
+
+@supports selector(:focus-visible) {
+
+    .footer-nav__link {
+        &:focus-visible {
+            outline: 1px solid var(--color-white);
+        }
+    }
+}

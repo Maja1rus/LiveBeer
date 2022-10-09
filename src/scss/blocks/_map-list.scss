@@ -1,0 +1,134 @@
+.mab-tab__list {}
+
+.map-list {
+    display: grid;
+    gap: 8px;
+}
+
+.map-list__size {
+    display: none;
+    max-height: 440px;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &--active {
+        display: block;
+    }
+}
+
+.map-list__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 60px 16px 12px;
+    transition: all 0.2s ease-out;
+    width: 80%;
+
+    &:hover {
+        background: #F2F2F2;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+
+.map-list__title {
+    display: flex;
+    align-items: center;
+}
+
+.map-list__icon {
+    display: inline-block;
+    flex-basis: auto;
+    flex-shrink: 0;
+    margin-right: 6px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color-dark-gray);
+
+    &--green {
+        background-color: #27AE60;
+    }
+
+    &--blue {
+        background-color: #1761D0;
+    }
+
+    &--red {
+        background-color: #F8353E;
+    }
+
+    &--orange {
+        background-color: #F2994A;
+    }
+
+    &--purple {
+        background-color: #9B51E0;
+    }
+
+    &--white {
+        background-color: var(--color-white);
+    }
+}
+
+.map-list__address {
+    display: inline-block;
+    font-weight: var(--font-semi-bold);
+}
+
+.map-list__subtitle {
+    padding-left: 12px;
+}
+
+.map-list__works,
+.map-list__status {
+    display: inline-block;
+    font-size: var(--size-small);
+    color: var(--color-dark-gray);
+    font-weight: var(--font-medium);
+
+
+
+}
+
+.map-list__status {
+    padding-right: 5px;
+
+    &--open {
+        color: #27AE60;
+    }
+
+    &--close {
+        color: #EB5757;
+    }
+}
+
+.map-list__dotte {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        top: 50%;
+        left: -6px;
+        transform: translate(0, -50%);
+        background-color: var(--color-dark-gray);
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .map-list__item {
+        gap: 0;
+    }
+
+    .map-tab__wrap {
+        gap: 5px;
+    }
+
+    .map-list__item {
+        padding-top: 20px;
+    }
+}

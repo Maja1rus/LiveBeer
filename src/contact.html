@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/head.html', {
+"title":"LiveBeer"
+})
+
+<body>
+    @@include('html/header.html', {})
+    <main>
+        <section class="contact-page container">
+            @@include('html/nav-page.html', {
+            "nav-page":"Контакты"
+            })
+            <h1 class="contact-page__title title">Контакты</h1>
+
+            <div class="contact-page__wrap">
+                <div class="header__contact">
+                    @@include('html/main-contact.html', {})
+                    @@include('html/contact.html', {})
+                </div>
+                <div class="contact-page__img">
+                    <img src="@img/about/about-index.jpg" weight="479px" height="398px" alt="О нас">
+                </div>
+            </div>
+        </section>
+        @@include('html/question.html', {})
+    </main>
+    @@include('html/footer.html', {})
+    @@include('html/age-verification.html', {})
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

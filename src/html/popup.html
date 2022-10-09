@@ -1,0 +1,76 @@
+<div class="popup">
+    <div class="popup__body">
+        <div class="popup__content">
+            <button class="popup__close close-popup"><span class="popup__icon"></span></button>
+            <form class="popup__form" method="POST">
+                <div class="popup__wrap">
+                    <p class="popup__title">ответь на несколько вопросов</p>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">Имя и Фамилия полностью</p>
+                        <input type="text" class="popup__input" placeholder="Имя и Фамилия полностью" data-input="name"
+                            name="name">
+                    </label>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">Укажи дату рождения</p>
+                        <input type="date" class="popup__input" placeholder="Укажи дату рождения" min="1960-01-01"
+                            max="2005-01-01" data-input="birthdate" name="birthdate">
+                    </label>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">номер телефона</p>
+                        <input type="tel" class="popup__input popup__input--phone" placeholder="+7 (___) ___-__-__"
+                            data-input="phone" name="phone">
+                    </label>
+                    <button type="button" type="submit" class="btn popup__btn popup-btn__next">Следующий шаг</button>
+                </div>
+
+                <div class="popup__wrap popup__info">
+                    <div class="popup__item">
+                        <p class="popup__subtitle">Какая вакансия тебя заинтересовала?</p>
+                        <label class="radio">
+                            <input type="radio" class="radio__real" name="jop-position" value="Категорийный менеджер"
+                                checked>
+                            <span class="radio__fake"></span>
+                            <span class="radio__title">Категорийный менеджер</span>
+                        </label>
+                        <label class="radio">
+                            <input type="radio" class="radio__real" name="jop-position" value="Продавец-кассир">
+                            <span class="radio__fake"></span>
+                            <span class="radio__title">Продавец-кассир</span>
+                        </label>
+                    </div>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">Город вашего проживания</p>
+                        <input type="text" class="popup__input" placeholder="Введите название вашего населенного пункта"
+                            data-input="city" name="city">
+                    </label>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">ближайшая станция метро</p>
+                        <input type="text" class="popup__input"
+                            placeholder="Напишите ближайшее метро к вашему месту проживания" data-input="metro"
+                            name="metro">
+                    </label>
+                    <label class="popup__item">
+                        <p class="popup__subtitle">дополнтельная информация</p>
+                        <textarea type="text" class="popup__texarea"
+                            placeholder="Здесь вы можете указать информацию, которой хотите с нами поделиться"
+                            name="more-info"></textarea>
+                    </label>
+                    <div class="popup__item">
+                        <p>Отправляя данную форму вы соглашаетесь с политикой <a class="popup__link-policy" href="https://livebeerspb.ru/privacy/" title="#">обработки персональных данных</a></p>
+                        <button type="submit" type="submit" class="btn popup__btn popup-btn__next popup-btn__end">Отправить
+                            заявку</button>
+                    </div>
+                </div>
+
+                <div class="popup__wrap">
+                    <div class="popup__end">
+                        <p class="popup__end-title title">Ваша заявка успешно отправлена!</p>
+                        <p class="popup__end-subtitle">С вами свяжется наш hr-специалист в рабочее время (пн-пт
+                            10:00-18:00)
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
